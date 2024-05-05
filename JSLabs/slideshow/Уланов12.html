@@ -1,0 +1,32 @@
+<html lang="ru">
+
+<head>
+    <title>Лабораторная работа № 12</title>
+    <script src="Уланов12.js"></script>
+</head>
+
+<body onload="showSlides(); drawStore()">
+    <center>
+        <h1>
+            Лабораторная работа № 12.
+            <br>
+            Добро пожаловать!
+            <br>
+        </h1>
+        <img id="slide" height="550">
+        <p>
+            <button onclick=changeSpeed(2)>быстрее</button>
+            <button onclick=changeSpeed(0.5)>медленнее</button>
+            <button id="stop" onclick=changeSpeed(0)>стоп</button>
+        </p>
+    </center>
+    <h3 align="left">
+        <p>
+            <div id="store"></div>
+        </p>
+        <button onclick=getTotalCost()>Расчёт стоимости</button>
+        <div id="totalCost"></div>
+    </h3>
+</body>
+
+</html>
